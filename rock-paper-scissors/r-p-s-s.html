@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Rock, Paper, Sissors, Shoot</title>
+    	<script type="text/javascript">
+			var r1 = document.getElementById("rock1").click();
+			var r2 = document.getElementById("rock2").click();
+			var p1 = document.getElementById("paper1").click();
+			var p2 = document.getElementById("paper2").click();
+			var s1 = document.getElementById("sissors1").click();
+			var s2 = document.getElementById("sissors2").click();
+			if (r1 == true) {
+				document.getElementById("winner").innerHTML = "Player 1 Wins!";
+			}
+    	</script>
+	</head>
+	<body>
+		<h2>Player 1</h2>
+		<img id="rock" onclick="rock1();" style="cursor:pointer; margin:10px; border:1px solid green;" src="./rock.png">
+		<img id="paper" onclick="paper1();" style="cursor:pointer; margin:10px;" src="./paper.png">
+		<img id="sissors" onclick="sissors1();" style="cursor:pointer; margin:10px; border:1px solid green;" src="./sissors.png">
+		<h2>Player 2</h2>
+		<img id="rock" onclick="rock2();" style="cursor:pointer; margin:10px; border:1px solid green;" src="./rock.png">
+		<img id="paper" onclick="paper2();" style="cursor:pointer; margin:10px;" src="./paper.png">
+		<img id="sissors" onclick="sissors2();" style="cursor:pointer; margin:10px; border:1px solid green;" src="./sissors.png">
+		<div id="winner" style="border:5px solid black;"></div>
+	</body>
+</html>

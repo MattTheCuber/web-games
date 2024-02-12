@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Maze-1</title>
+    	<script src="http://yui.yahooapis.com/3.18.1/build/yui/yui-min.js"></script>
+		<style type="text/css">
+			#mazze {
+				float:center;
+				margin:50px;
+			    width: 1000px;
+			    height:300px;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="mazze"></div>
+		<script>
+		    YUI().use('graphics', function (Y)
+		    {
+		        var maz = new Y.Graphic({render: "#mazze"}),
+		            maze = maz.addShape({
+		                type: "path",
+						stroke: {
+							weight: 1,
+							color: "#000",
+							opacity: 1,
+							dashstyle: [100000000000, 100000000001]
+						},
+						id: "maze"
+		            })
+		            maze.moveTo(0,-1);
+					maze.lineTo(0,301);
+					maze.lineTo(300,299);
+					maze.lineTo(300,0);
+					maze.lineTo(0,-1);
+					maze.moveTo(22,2);
+					maze.lineTo(23,165);
+					maze.lineTo(49,163);
+					maze.moveTo(23,184);
+					maze.lineTo(22,279);
+					maze.moveTo(24,187);
+					maze.lineTo(272,187);
+					maze.lineTo(271,166);
+					maze.lineTo(220,165);
+					maze.lineTo(220,142);
+					maze.lineTo(219,100);
+					maze.lineTo(249,97);
+					maze.lineTo(248,58);
+					maze.moveTo(221,59);
+					maze.lineTo(196,59);
+					maze.lineTo(196,46);
+					maze.moveTo(47,165);
+					maze.lineTo(190,166);
+					maze.lineTo(193,106);
+					maze.lineTo(193,80);
+					maze.lineTo(225,80);
+					maze.moveTo(192,81);
+					maze.lineTo(172,81);
+					maze.lineTo(172,50);
+					maze.lineTo(172,39);
+					maze.lineTo(58,37);
+					maze.lineTo(58,117);
+					maze.moveTo(58,145);
+					maze.lineTo(190,153);
+					maze.moveTo(196,47);
+					maze.lineTo(196,25);
+					maze.lineTo(37,21);
+					maze.lineTo(39,143);
+					maze.lineTo(61,146);
+					maze.lineTo(61,131);
+					maze.lineTo(167,139);
+					maze.moveTo(60,116);
+					maze.lineTo(160,120);
+					maze.lineTo(171,120);
+					maze.lineTo(170,94);
+					maze.lineTo(146,91);
+					maze.lineTo(146,64);
+					maze.lineTo(149,57);
+					maze.lineTo(73,52);
+					maze.lineTo(73,103);
+					maze.lineTo(149,105);
+					maze.moveTo(128,105);
+					maze.lineTo(128,76);
+					maze.lineTo(93,75);
+					maze.lineTo(93,92);
+					maze.lineTo(110,92);
+					maze.moveTo(247,60);
+					maze.lineTo(245,42);
+					maze.lineTo(220,45);
+					maze.lineTo(217,25);
+					maze.lineTo(217,15);
+					maze.lineTo(276,16);
+					maze.lineTo(276,41);
+					maze.moveTo(299,57);
+					maze.lineTo(263,56);
+					maze.lineTo(261,35);
+					maze.lineTo(233,35);
+					maze.moveTo(263,77);
+					maze.lineTo(265,113);
+					maze.lineTo(234,114);
+					maze.lineTo(234,154);
+					maze.lineTo(298,154);
+					maze.lineTo(299,77);
+					maze.lineTo(282,77);
+					maze.lineTo(280,138);
+					maze.lineTo(247,132);
+					maze.moveTo(285,176);
+					maze.lineTo(283,281);
+					maze.lineTo(167,279);
+					maze.lineTo(176,248);
+					maze.moveTo(175,226);
+					maze.lineTo(171,204);
+					maze.lineTo(253,204);
+					maze.moveTo(151,278);
+					maze.lineTo(152,187);
+					maze.moveTo(269,190);
+					maze.lineTo(269,270);
+					maze.lineTo(199,267);
+					maze.lineTo(170,266);
+					maze.moveTo(173,224);
+					maze.lineTo(195,224);
+					maze.lineTo(191,250);
+					maze.lineTo(267,250);
+					maze.moveTo(269,220);
+					maze.lineTo(212,219);
+					maze.lineTo(212,233);
+					maze.lineTo(254,236);
+					maze.moveTo(205,166);
+					maze.lineTo(203,84);
+					maze.moveTo(131,298);
+					maze.lineTo(124,206);
+					maze.moveTo(94,188);
+					maze.lineTo(104,276);
+					maze.moveTo(78,300);
+					maze.lineTo(68,204);
+					maze.moveTo(40,189);
+					maze.lineTo(47,319);
+					maze.moveTo(77,301);
+					maze.lineTo(78,319);
+					maze.moveTo(58,314);
+					maze.lineTo(57,337);
+					maze.lineTo(72,339);
+					maze.moveTo(58,316);
+					maze.lineTo(73,316);
+					maze.moveTo(58,325);
+					maze.lineTo(65,325);
+					maze.moveTo(15,7);
+					maze.curveTo(-5,0,0,17,5,14);
+					maze.moveTo(5,15);
+					maze.lineTo(14,27);
+					maze.end();
+		    });
+		</script>
+	</body>
+</html>
