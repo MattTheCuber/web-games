@@ -1,0 +1,11 @@
+body { background-color:#005600; }
+.body { width:1250px; text-align:center; height:425px; background-color:#005600; margin-top:100px; margin-left:auto; margin-right:auto; }
+span { font-size:50px; }
+button { font-size:50px; background-color:#8F8F8F; border:1px ridge #333333; border-radius:5px; }
+button:hover { background-color:#E6E6E6; }
+button:active { background-color:#3C3C3C; }
+.answer { width:850px; height:55px; font-size:50px; background-color:yellow; border:2.5px solid #000000; margin-left:auto;
+    margin-right:auto; margin-top:15px; }
+#answer { margin-top:-2.5px; }
+#hint { margin-top:-2.5px; }
+#statment { font-size:75px; }

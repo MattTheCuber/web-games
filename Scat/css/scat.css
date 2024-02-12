@@ -1,0 +1,25 @@
+#body { width:85%; z-index:1; height:2150px; margin-left:auto; margin-right:auto; margin-top:10px; margin-bottom:10px; border:10px ridge #777777;
+    font-family:arial; background-color:#FFFF00; text-align:center; font-size:20px; color:yellow; }
+hr { width:85%; height:5px; background-color:#DDDDDD; }
+.button { border:2.5px solid #000000; border-radius:5px; width:125px; margin:5px; float:left; background-color:#E00000; }
+.button:hover { background-color:#ff0f0f; cursor:pointer; }
+.button:active { background-color:#8f0000; }
+#special { margin-left:365px; }
+#letter { border:2.5px solid #000000; border-radius:5px; width:52px; font-size:50px; margin-right:5px; margin-top:5px; margin-bottom:5px;
+    display:inline-block; background-color:#E00000; color: #FFFFFF; text-shadow: 1px 1px 2px #000000, 0 0 25px yellow, 0 0 10px yellow;
+    box-shadow: 7.5px 7.5px 10px #55555; height:57px; }
+.listName { font-size:30px; cursor:pointer; border:2.5px solid #000000; border-radius:5px; :#555555; width:35%; border-top-left-radius:5px;
+    border-top-right-radius:5px; border-bottom-right-radius:0px; border-bottom-left-radius:0px; display:inline-block;
+    background:-moz-linear-gradient(#FF0F0F, #8F0000); }
+.lists { font-size:30px; border-bottom-left-radius:5px; border-bottom-right-radius:5px; background:-moz-linear-gradient(#FF0F0F, #8F0000);
+    width:35.25%; height:50px; display:inline-block; border-top-right-radius:0px; border-top-left-radius:0px; }
+ol { text-align:left; margin-left:5px; }
+img { float:left; margin-right:5px; margin-top:10px; margin-left:400px; }
+h1 { text-align:left; margin-left:5px; color:black; }
+span { border:2px solid #000000; background-color:#E00000; width:50px; border-radius:5px; }
+#yourLetter { float:left; margin-left:300px; }
+#yourTime { float:left; margin-left:25px; margin-top:50px; }
+aside { text-align:center; margin-left:965px; position:fixed; top:200px; width:290px; font-size:50px; font-family:arial;
+    border:2.5px solid black; box-shadow:5px 5px 7.5px #555555; background-color:yellow; border-radius:5px; }
+#specialButton { margin-left:42.5px; width:200px; }
+.words { color:black; text-shadow:2px 2px 8px #555555; }

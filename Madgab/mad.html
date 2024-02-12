@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Mad Gab</title>
+        <meta charset="UTF-8" />
+        <script type="text/javascript" src="../../jquery.min.js"></script>
+        <script type="text/javascript" src="./js/mad.js"></script>
+        <link rel="stylesheet" type="text/css" href="./css/mad.css" />
+    </head>
+    <body>
+        <div class="body">
+            <span id="statment">Click the button to get word.</span>
+            <br/>
+            <button onclick="javascript:history.go(0);">Delete Word</button>
+            <button onclick="getStatment()">Get Statment</button>
+            <div class="answer" onclick="showHint()">Hint</div>
+            <div class="answer" id="hint"> </div>
+            <div class="answer" onclick="showAnswer()">Answer</div>
+            <div class="answer" id="answer"> </div>
+        </div>
+    </body>
+</html>

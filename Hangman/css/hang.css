@@ -1,0 +1,29 @@
+#img1 { margin-left:182.5px; margin-top:127.5px; position:absolute; }
+#img2 { margin-left:193.8px; margin-top:215.5px; position:absolute; }
+#img3 { margin-left:132.5px; margin-top:225.5px; position:absolute; float:left; }
+#img4 { margin-left:242.5px; margin-top:226.5px; position:absolute; float:left; }
+#img5 { margin-left:122.5px; margin-top:347.5px; position:absolute; float:left; }
+#img6 { margin-left:237.5px; margin-top:348.5px; position:absolute; float:left; }
+#img7 { margin-left:398px; margin-top:0px; position:absolute; float:left; }
+#img8 { margin-left:100px; margin-top:0px; position:absolute; float:left; }
+.img9 { margin-top:100px; position:absolute; float:left; }
+#n1 { margin-left:5px; }
+#n2 { margin-left:60px; }
+#n3 { margin-left:115px; }
+#n4 { margin-left:170px; }
+#n5 { margin-left:225px; }
+#n6 { margin-left:280px; }
+#n7 { margin-left:335px; }
+#n8 { margin-left:390px; }
+#n9 { margin-left:445px; }
+#n10 { margin-left:500px; }
+#n11 { margin-left:555px; }
+#n12 { margin-left:610px; }
+#n13 { margin-left:665px; }
+.wrongLetters { border:5px solid #000000; width:700px; height:300px; }
+margin:10px;
+.left { float:left; }
+.right { float:right; }
+input { width:50px; height:50px; margin:10px; font-size:48px; text-transform:uppercase; }
+button { font-size:48px; }
+.word { width:250px; font-size:25px; text-transform:lowercase; }

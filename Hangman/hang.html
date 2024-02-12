@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Hangman</title>
+        <meta charset="UTF-8" />
+        <script type="text/javascript" src="../../jquery.min.js"></script>
+        <script type="text/javascript" src="./js/hang.js"></script>
+        <link rel="stylesheet" type="text/css" href="./css/hang.css" />
+        <link rel="icon" type="image/jpg" title="Favicon" href="./images/logo.png"/>
+    </head>
+    <body>
+        <div class="right">
+            <div class="wrongLetters"> </div>
+            Your Guess:
+            <br/>
+            <input id="guessedLetter" type="text" max="1" min="1" onkeyup="checkLetter()" />
+            <button onclick="randWord();">Get Word</button>
+            <input type="text" class="word" value="value()"/>
+            <button onclick="checkWord()">Guess</button>
+            <br/>
+            <div id="lines">
+                <img class="img9" id="n1" src="./images/line.png" />
+                <img class="img9" id="n2" src="./images/line.png" />
+                <img class="img9" id="n3" src="./images/line.png" />
+                <img class="img9" id="n4" src="./images/line.png" />
+                <img class="img9" id="n5" src="./images/line.png" />
+                <img class="img9" id="n6" src="./images/line.png" />
+                <img class="img9" id="n7" src="./images/line.png" />
+                <img class="img9" id="n8" src="./images/line.png" />
+                <img class="img9" id="n9" src="./images/line.png" />
+                <img class="img9" id="n10" src="./images/line.png" />
+                <img class="img9" id="n11" src="./images/line.png" />
+                <img class="img9" id="n12" src="./images/line.png" />
+                <img class="img9" id="n13" src="./images/line.png" />
+            </div>
+            <span id="word"></span>
+        </div>
+        <div class="left">
+            <img class="hidden" id="img1" src="./images/face.png" />
+            <img class="hidden" id="img2" src="./images/body.png" />
+            <img class="hidden" id="img3" src="./images/arm1.png" />
+            <img class="hidden" id="img4" src="./images/arm2.png" />
+            <img class="hidden" id="img5" src="./images/leg1.png" />
+            <img class="hidden" id="img6" src="./images/leg2.png" />
+            <img id="img7" src="./images/stand1.png" />
+            <img id="img8" src="./images/stand2.png" />
+        </div>
+    </body>
+</html>

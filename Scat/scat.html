@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Scattergories</title>
+        <meta charset="UTF-8" />
+        <script type="text/javascript" src="../../jquery.min.js"></script>
+        <script type="text/javascript" src="./js/scat.js"></script>
+        <link rel="stylesheet" type="text/css" href="./css/scat.css" />
+        <link rel="icon" type="image/jpg" title="Favicon" href="./images/small-logo.jpg"/>
+    </head>
+    <body>
+        <aside>
+            <span class="button" id="specialButton" onclick="timedCount()">Start</span>
+            <br/><br/>
+            Time left:
+            <br/>
+            <span class="timer">180 seconds</span>
+        </aside>
+        <div id="body">
+            <img src="./images/scattergories-logo.jpg" alt="scattergories logo" />
+            <h1>Scattergories</h1>
+            <hr/>
+            <div onclick="randLetter(easyLetters, 10)" class="button" id="special" name="differculty">Easy Letter</div>
+            <div onclick="randLetter(normalLetters, 32)" class="button" name="differculty">Normal Letter</div>
+            <div onclick="randLetter(hardLetters, 7)" class="button" name="differculty">Hard Letter</div>
+            <br/><br/>
+            <div id="yourLetter">
+                <p>Your Letter:</p>
+                <div id="letter"> </div>  
+            </div>
+            <div id="yourTime">
+                <span class="button" onclick="timedCount()">Start</span>
+                <span class="button" onclick="stopCount()">Pause</span>
+                <span class="button" onclick="restartCount()">Restart</span>
+                <br>
+                <span class="timer">180 seconds</span>
+            </div>
+            <br/><br/><br/><br/><br/><br/>
+            <p class="words">Hover to open; Click to close.</p>
+            <div onmouseover="showList(0, '#li1', '1', 'A boys name', 'U.S. cities',
+                'Things that are cold', 'School supplies', 'Pro sport teams', 'Insects'
+                , 'Breakfast foods', 'Furniture', 'TV shows',
+                'Things found in the ocean', 'Presidents', 'Product names')"
+                onclick="hideList(0, '.c')" id="1" class="listName">List 1</div>
+            <br/>
+            <div class="lists" id="li1"></div>
+            <br/><br/>
+            <div onmouseover="showList(1, '#li2', '2', 'Famous females', 'Medicine/drugs'
+                , 'Things made of metal', 'Hobbies', 'People in uniform',
+                'Things you plug in', 'Animals', 'Languages', 'Names used in the Bible',
+                'Junk food', 'Things that grow', 'Companies')"
+                onclick="hideList(1, '.c')" id="2" class="listName">List 2</div>
+            <br/>
+            <div class="lists" id="li2"></div>
+            <br/><br/>
+            <div onmouseover="showList(2, '#li3', '3', 'Articles of clothing', 'Desserts'
+                , 'Car parts', 'Things found on a map', 'Athletes', '4-letter words',
+                'Items in a refrigerator', 'Farm animals', 'Street names',
+                'Things at the beach', 'Colors', 'Tools')"
+                onclick="hideList(2, '.c')" id="3" class="listName">List 3</div>
+            <br/>
+            <div class="lists" id="li3"></div>
+            <br/><br/>
+            <div onmouseover="showList(3, '#li4', '4', 'Heros', 'Gift/presents',
+                'Terms of endearment', 'Kinds of dances', 'Things that are black',
+                'Vehicles', 'Tropical locations', 'College majors', 'Dairy products',
+                'Things in a souvenir shop', 'Items in your purse', 'World records')"
+                onclick="hideList(3, '.c')" id="4" class="listName">List 4</div>
+            <br/>
+            <div class="lists" id="li4"></div>
+            <br/><br/>
+            <div onmouseover="showList(4, '#li5', '5', 'Sandwhiches',
+            'Items in a catalog', 'World leaders/poloticians', 'School subjects',
+            'Excuses for being late', 'Ice cream flavors', 'Things that jump/bounce',
+            'Television stars', 'Things in a park', 'Foregn cities', 'Stones/gems',
+            'Musical instruments')"
+                onclick="hideList(4, '.c')" id="5" class="listName">List 5</div>
+            <br/>
+            <div class="lists" id="li5"></div>
+            <br/><br/>
+            <div onmouseover="showList(5, '#li6', '6', 'Nicknames', 'Things in the sky',
+                'Pizza toppings', 'Colleges/universties', 'Fish', 'Countries',
+                'Things that have spots', 'Historical figures',
+                'Something your afraid of', 'Terms of measurment', 'Items in this room'
+                , 'Book titles')"
+                onclick="hideList(5, '.c')" id="6" class="listName">List 6</div>
+            <br/>
+            <div class="lists" id="li6"></div>
+            <br/><br/>
+            <div onmouseover="showList(6, '#li7', '7', 'Fictional characters',
+            'Menu items', 'Magazines', 'Capitols', 'Kinds of candy',
+            'Items you save up to buy', 'Footwear', 'Something you keep hidden',
+            'Items in a suitcase', 'Things with tails', 'Sports equipment', 'Crimes')"
+                onclick="hideList(6, '.c')" id="7" class="listName">List 7</div>
+            <br/>
+            <div class="lists" id="li7"></div>
+            <br/><br/>
+            <div onmouseover="showList(7, '#li8', '8', 'Things that are sticky',
+            'Awards/ceremonies', 'Cars', 'Spices/herbs', 'Bad habbits',
+            'Cosmetics/toiletries', 'Celebrities', 'Cooking utensils',
+            'Reptiles/amphibians', 'Parks', 'Leisure activites',
+            'Things your allergic to')"
+                onclick="hideList(7, '.c')" id="8" class="listName">List 8</div>
+            <br/>
+            <div class="lists" id="li8"></div>
+            <br/><br/>
+            <div onmouseover="showList(8, '#li9', '9', 'Restaurants', 'Notorious people'
+                , 'Fruits', 'Things in a medicine cabinet', 'Toys', 'Household chores',
+                'Bodies of water', 'Authors', 'Halloween costumes', 'Weapons',
+                'Things that are round', 'Words like the word exercise')"
+                onclick="hideList(8, '.c')" id="9" class="listName">List 9</div>
+            <br/>
+            <div class="lists" id="li9"></div>
+            <br/><br/>
+            <div onmouseover="showList(9, '#li10', '10', 'Sports', 'Song titles',
+                'Parts of the body', 'Ethnic foods', 'Things you shout',
+                'Birds', 'A girls name', 'Ways of transportation',
+                'Items in a kitchen', 'Villains/monsters', 'Flowers', 'Things you replace'
+                )"
+                onclick="hideList(9, '.c')" id="10" class="listName">List 10</div>
+            <br/>
+            <div class="lists" id="li10"></div>
+            <br/><br/>
+            <div onmouseover="showList(10, '#li11', '11', 'Baby foods',
+                'Famous dous and trios', 'Things found in a desk', 'Vacation spots',
+                'Diseases', 'Words associated with money', 'Items in a vending machine',
+                'Movie titles', 'Games', 'Things you wear', 'Types of soda',
+                'Things at a circus')"
+                onclick="hideList(10, '.c')" id="11" class="listName">List 11</div>
+            <br/>
+            <div class="lists" id="li11"></div>
+            <br/><br/>
+            <div onmouseover="showList(11, '#li12', '12', 'Vegetables', 'States',
+                'Things you throw away', 'Occupations', 'Appliances', 'Cartoon characters'
+                , 'Types of drinks', 'Musical groups', 'Store names',
+                'Things at a football game', 'Trees', 'Personality traits')"
+                onclick="hideList(11, '.c')" id="12" class="listName">List 12</div>
+            <br/>
+            <div class="lists" id="li12"></div>
+        </div>
+    </body>
+</html>
