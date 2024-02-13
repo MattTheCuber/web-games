@@ -1,6 +1,6 @@
 # Web Games
 
-Games I built while learning web development in 2015 (age 12).
+Games I built while learning web development in 2015 (age 11).
 
 ## Hangman
 ![image](https://github.com/MattTheCuber/farm-website/assets/32849887/5f8da8c7-b12b-4dd2-aebb-b625e4aefd4c)
